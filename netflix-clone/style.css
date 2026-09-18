@@ -1,15 +1,15 @@
-*{
-     margin: 0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial;
 }
 
 /*navbar*/
-header{
+header {
     background-image:
-    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-    url("img/netflix-bg-img.jpg");
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("img/netflix-bg-img.jpg");
 
     background-size: cover;
     background-position: center;
@@ -17,29 +17,34 @@ header{
     position: relative;
     overflow: hidden;
     color: white;
+    width: 100%;
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 130px ;
+    padding-right: 130px;
 }
-.logo{
+
+.logo {
     background-image: url("img/netflix-logo.png");
-   background-size: cover;
-   background-position: center;
+    background-size: cover;
+    background-position: center;
     height: 100px;
     width: 150px;
-margin-left: 100px;
-cursor: pointer;
+    margin-left: 100px;
+    cursor: pointer;
 }
-.nav-selector{
+
+.nav-selector {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin:0 0 0 -12px;
+    margin: 0 0 0 -12px;
 }
-.find-select{
+
+.find-select {
     background: transparent;
     color: white;
     border-radius: 5px;
@@ -49,16 +54,18 @@ cursor: pointer;
     cursor: pointer;
     height: 34px;
 }
-.nav-selector i{
-   position: absolute;
+
+.nav-selector i {
+    position: absolute;
     color: white;
     font-size: 12px;
     padding-left: 15px;
 }
-.btn{
+
+.btn {
     background-color: red;
     color: white;
-text-decoration: none;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     font-size: 0.9rem;
@@ -68,74 +75,81 @@ text-decoration: none;
     height: 30px;
     padding: 6px 0 5px 15px;
 }
+
 /*hero section*/
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     min-height: 80vh;
-
     color: #FFFFFF;
     text-align: center;
-   
-}
-.hero-head h1{
-font-size: 60px;
-font-weight: 900;
- margin: 100px 0 8px 0;
- width: 800px;
-   line-height: 1.1;
-}
-.hero-head h3{
-    margin: 0 0 16px 0;
-}
-.hero-msg p{
-    font-size: 16px;
-}
-.hero-input{
-text-align: center;
-height: 56px;
-display: flex;
-margin: 20px 0 0 ;
-border: none;
-cursor: pointer;
 
 }
-.hero-input input {
-width: 345px;
-margin-right: 20px;
-padding: 24px 16px 15px;
-background: transparent;
-color: white;
-border-radius: 5px;
-font-size: 16px;
+
+.hero-head h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 100px 0 8px 0;
+    width: 800px;
+    line-height: 1.1;
 }
-.hero-input .btn-2{
+
+.hero-head h3 {
+    margin: 0 0 16px 0;
+}
+
+.hero-msg p {
+    font-size: 16px;
+}
+
+.hero-input {
+    text-align: center;
+    height: 56px;
+    display: flex;
+    margin: 20px 0 0;
+    border: none;
+    cursor: pointer;
+
+}
+
+.hero-input input {
+    width: 345px;
+    margin-right: 20px;
+    padding: 24px 16px 15px;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hero-input .btn-2 {
     width: 200px;
     border-radius: 5px;
-     background-color: red;
-     font-size: 22px;
-     padding: 0 30px 0 0;
-     font-weight: 700;
-     color: #FFFFFF;
-     border: none;
+    background-color: red;
+    font-size: 22px;
+    padding: 0 30px 0 0;
+    font-weight: 700;
+    color: #FFFFFF;
+    border: none;
 }
-.hero-input i{
+
+.hero-input i {
     position: absolute;
     color: white;
     padding: 20px 0 0 520px;
 }
-.curve{
+
+.curve {
     position: relative;
     height: 2800px;
     background: black;
     overflow: hidden;
 }
 
-.curve::before{
+.curve::before {
     content: "";
     position: absolute;
 
@@ -148,177 +162,206 @@ font-size: 16px;
     border-top: 4px solid #ff004c;
     border-radius: 50%;
 
-    background: radial-gradient(
-        ellipse at center,
-        rgba(6, 52, 95, 0.66) 0%,
-        black 70%
-    );
+    background: radial-gradient(ellipse at center,
+            rgba(6, 52, 95, 0.66) 0%,
+            black 70%);
 
     box-shadow: 0 -20px 50px rgba(0, 0, 255, 0.4);
 }
-.movie-card{
-     display: flex;
+
+.movie-card {
+    display: flex;
     justify-content: space-evenly;
-     width: 200px;
+    width: 200px;
     margin-left: 40px;
 }
-.movie-section h1{
+
+.movie-section h1 {
     padding: 150px 0 0 140px;
     color: white;
     font-size: 30px;
 }
-.box{
+
+.box {
     padding: 32px 0 0 50px;
     position: relative;
     overflow: visible;
     transition: all 0.5s ease;
 }
-.box:hover{
+
+.box:hover {
     transform: scale(1.05);
 }
-.box img{
-   height: 300px;
+
+.box img {
+    height: 300px;
     width: 230px;
     border-radius: 15px;
     cursor: pointer;
 }
-.number{
-position: absolute;
+
+.number {
+    position: absolute;
     left: 20px;
-top: 100px;
+    top: 100px;
     color: black;
     font-size: 120px;
     font-weight: 900;
     -webkit-text-stroke: 2px white;
     z-index: 2;
 }
-.card-head h1{
+
+.card-head h1 {
     font-size: 25px;
     color: #FFFFFF;
     margin: 30px 0 20px 100px;
 }
-.card-con{
-  color: white;
- display: flex;
- justify-content: space-evenly;
- margin: 0 50px 0 0;
+
+.card-con {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 50px 0 0;
 }
-.card{
-height: 300px;
-   width: 350px;
+
+.card {
+    height: 300px;
+    width: 350px;
     border: 2px solid transparent;
     text-align: center;
-margin: 20px 20px 0 80px;
-border-radius: 30px;
-padding: 20px 0 0 0;
- background: linear-gradient(
-        135deg,
-        #1B2246 0%,
-        #1A1738 50%,
-        #210E17 100%);
-transition: all 1s ease;
-cursor: pointer;
+    margin: 20px 20px 0 80px;
+    border-radius: 30px;
+    padding: 20px 0 0 0;
+    background: linear-gradient(135deg,
+            #1B2246 0%,
+            #1A1738 50%,
+            #210E17 100%);
+    transition: all 1s ease;
+    cursor: pointer;
 }
-.card:hover{
+
+.card:hover {
     transform: scale(1.05);
 }
-.card h1{
+
+.card h1 {
     font-size: 25px;
 }
-.card p{
+
+.card p {
     padding: 30px 0 0 0;
 }
-.ques-head h1{
+
+.ques-head h1 {
     color: #FFFFFF;
-font-size: 25px;
-margin: 50px 0 30px 80px;
+    font-size: 25px;
+    margin: 50px 0 30px 80px;
 }
-.form-select{
+
+.form-select {
     height: 70px;
     margin: 10px 0 0 80px;
     width: 90%;
     color: #FFFFFF;
-    background-color:#2D2D2D;
+    background-color: #2D2D2D;
     transition: all 1s ease;
     font-size: 25px;
     padding: 0 90px 0 20px;
     cursor: pointer;
 }
-.form-select:hover{
+
+.form-select:hover {
     background-color: #414141;
 }
-.form-select .value{
+
+.form-select .value {
     text-align: center;
 }
-.again-hero-msg p{
-      font-size: 16px;
-      color: #FFFFFF;
-      align-items: center;
-      justify-content: center;
+
+.again-hero-msg p {
+    font-size: 16px;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
     margin: 70px 0 0 500px;
 }
-.again-hero-input{
-text-align: center;
-height: 56px;
-display: flex;
-margin: 20px 0 0 ;
-border: none;
-cursor: pointer;
-margin: 70px 0 0 300px;
+
+.again-hero-input {
+    text-align: center;
+    height: 56px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    margin: 70px 0 0 300px;
 
 }
+
 .again-hero-input input {
-width: 650px;
-margin-right: 20px;
-padding: 24px 16px 15px;
-background: transparent;
-color: white;
-border-radius: 5px;
-font-size: 16px;
-}
-.again-hero-input .btn-2{
-    width: 200px;
-    border-radius: 5px;
-     background-color: red;
-     font-size: 22px;
-     padding: 0 30px 0 0;
-     font-weight: 700;
-     color: #FFFFFF;
-     border: none;
-}
-.again-hero-input i{
-    position: absolute;
+    width: 650px;
+    margin-right: 20px;
+    padding: 24px 16px 15px;
+    background: transparent;
     color: white;
-    padding: 20px 0 0 830px;
+    border-radius: 5px;
+    font-size: 16px;
 }
+
+.again-hero-input .btn-2 {
+    position: relative;
+    width: 200px;
+    height: 56px;
+    border-radius: 5px;
+    background-color: red;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-right: 35px;
+}
+
+.again-hero-input .btn-2 i {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 15px;
+}
+
 /*footer*/
-footer{
-   color: #B3B3B3;
-     
+footer {
+    color: #B3B3B3;
+
 }
-.for-call p{
+
+.for-call p {
     font-size: 0.8rem;
     margin: 80px 0 90px 180px;
     cursor: pointer;
 }
-.FAQ{
+
+.FAQ {
     display: flex;
-color: #B3B3B3;
-font-size: 0.8rem;
-justify-content: space-evenly;
-margin: 20px 200px 30px 0;
+    color: #B3B3B3;
+    font-size: 0.8rem;
+    justify-content: space-evenly;
+    margin: 0 200px 30px 0;
 }
-.FAQ p{
-padding: 25px 0 0 0;
-text-decoration: underline;
-cursor: pointer;
+
+.FAQ p {
+    padding: 25px 0 0 0;
+    text-decoration: underline;
+    cursor: pointer;
 }
-.again-nav-selector{
+
+.again-nav-selector {
     display: flex;
     align-items: center;
-     margin: 80px 0 90px 180px;
+    margin: 80px 0 90px 180px;
 }
-.again-find-select{
+
+.again-find-select {
     background: transparent;
     border-radius: 5px;
     padding: 0 10px 0 30px;
@@ -327,20 +370,336 @@ cursor: pointer;
     cursor: pointer;
     height: 34px;
 }
-.again-nav-selector i{
-   position: absolute;
-   color: #B3B3B3;
+
+.again-nav-selector i {
+    position: absolute;
+    color: #B3B3B3;
     font-size: 12px;
     padding-left: 15px;
 }
-.extra-indent{
-margin: 80px 0 90px 180px;
+
+.extra-indent {
+    margin: 80px 0 90px 180px;
 }
-.extra-indent h6{
-font-size: 0.8rem;
+
+.extra-indent h6 {
+    font-size: 0.8rem;
 }
-.extra-indent p{
+
+.extra-indent p {
     font-size: 0.7rem;
     margin-top: 50px;
 }
 
+/* tablet / ipad */
+@media(max-width:1032px) {
+    .movie-card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .box img {
+        height: 200px;
+        width: 100px;
+    }
+
+    .curve {
+        height: 2500px;
+    }
+
+    .number {
+        position: absolute;
+        left: 15px;
+        top: 80px;
+        color: black;
+        font-size: 70px;
+    }
+
+    .card-con {
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 15px 0 0;
+    }
+
+    .card {
+        height: 280px;
+        width: 350px;
+        margin: 20px 0 0 20px;
+    }
+
+    .card h1 {
+        font-size: 20px;
+    }
+
+    .form-select {
+        margin: 10px 0 0 50px;
+        font-size: 22px;
+    }
+
+    .again-hero-msg p {
+        font-size: 16px;
+        margin: 70px 0 0 100px;
+    }
+
+    .again-hero-input {
+        margin: 20px 0 0;
+        margin: 70px 0 0 100px;
+
+    }
+
+    .again-hero-input input {
+        width: 470px;
+    }
+
+    .again-hero-input .btn-2 {
+        margin-right: 20px;
+    }
+
+    .again-hero-input .btn-2 i {
+        top: 30%;
+        right: 38px;
+    }
+
+    .again-hero-input i {
+        padding: 20px 0 0 600px;
+    }
+
+    .for-call p {
+        margin: 80px 0 90px 60px;
+    }
+
+    .FAQ {
+        margin: 20px 30px 30px 0;
+    }
+
+    .again-nav-selector {
+        margin: 80px 0 0 110px;
+    }
+
+    .extra-indent {
+        margin: 80px 0 90px 110px;
+    }
+
+    .extra-indent h6 {
+        font-size: 0.9rem;
+    }
+
+    .extra-indent p {
+        font-size: 0.8rem;
+    }
+}
+
+
+/* mobile */
+@media(max-width:480px) {
+    .navbar {
+        padding-right: 10px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 100px;
+        margin-left: 0;
+    }
+
+    .nav-selector {
+        gap: 10px;
+        margin: 0 0 0 0;
+    }
+
+    .find-select {
+        width: 100px;
+        font-size: 0.7rem;
+        height: 30px;
+    }
+
+    .nav-selector i {
+        font-size: 10px;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+        width: 70px;
+        height: 28px;
+        padding: 6px 0 5px 13px;
+    }
+
+
+    .hero-head h1 {
+        font-size: 40px;
+        margin: 80px 0 8px 0;
+        width: 400px;
+    }
+
+    .hero-msg p {
+        font-size: 14px;
+    }
+
+    .hero-input {
+        margin-top: 30px;
+    }
+
+    .hero-input input {
+        width: 240px;
+        padding: 15px 14px 14px;
+        font-size: 16px;
+        height: 40px;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .hero-input .btn-2 {
+        width: 100px;
+        border-radius: 5px;
+        background-color: red;
+        font-size: 12px;
+        padding: 0 16px 0 0;
+        font-weight: 700;
+        height: 40px;
+    }
+
+    .hero-input i {
+        padding: 15px 0 0 330px;
+        font-size: 11px;
+    }
+
+    .curve {
+        height: 1950px;
+    }
+
+    .movie-card {
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+
+    }
+
+    .movie-section h1 {
+        padding: 150px 0 0 20px;
+        font-size: 20px;
+    }
+
+    .box {
+        flex: 0 0 0 auto;
+        padding: 32px 0 0 10px;
+        margin-right: 1rem;
+    }
+
+    .box img {
+        height: 120px;
+        width: 65px;
+    }
+
+    .number {
+        left: 6px;
+        top: 70px;
+        font-size: 29px;
+    }
+
+    .card-head h1 {
+        font-size: 18px;
+        margin: 30px 0 20px 20px;
+    }
+
+    .card {
+        height: 200px;
+        width: 350px;
+        margin: 20px 0 0 9px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    .card h1 {
+        font-size: 13px;
+
+    }
+
+    .card p {
+        padding: 25px 0 0 0;
+        font-size: 9px;
+    }
+
+    .ques-head h1 {
+        font-size: 18px;
+        margin-left: 20px;
+    }
+
+    .form-select {
+        height: 60px;
+        margin-left: 20px;
+        font-size: 15px;
+        padding: 0 50px 0 10px;
+    }
+
+    .again-hero-msg p {
+        font-size: 10px;
+        margin: 50px 0 0 30px;
+    }
+
+    .again-hero-input {
+        height: 56px;
+        margin: 70px 0 0 10px;
+
+    }
+
+    .again-hero-input input {
+        width: 600px;
+        margin-right: 10px;
+        padding: 19px 16px 15px;
+        font-size: 14px;
+        height: 46px;
+    }
+
+    .again-hero-input .btn-2 {
+        width: 240px;
+        height: 46px;
+        font-size: 13px;
+        padding-right: 14px;
+    }
+
+    .again-hero-input .btn-2 i {
+        right: 16px;
+        top: 27%;
+        font-size: 12px;
+    }
+
+    .for-call p {
+        font-size: 0.8rem;
+        margin: 20px 0 50px 30px;
+    }
+
+    .FAQ {
+        font-size: 0.6rem;
+        margin: 0 10px 0 0;
+    }
+
+    .FAQ p {
+        padding: 18px 0 0 0;
+    }
+
+    .again-nav-selector {
+        margin: 70px 0 70px 30px;
+    }
+
+    .again-find-select {
+        padding: 0 10px 0 10px;
+    }
+
+    .again-nav-selector i {
+        font-size: 10px;
+        padding-left: 12px;
+    }
+
+    .extra-indent {
+        margin: 40px 0 30px 30px;
+    }
+
+    .extra-indent h6 {
+        font-size: 0.8rem;
+    }
+
+    .extra-indent p {
+        margin-top: 30px;
+    }
+}
